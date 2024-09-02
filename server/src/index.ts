@@ -39,7 +39,7 @@ app.use("/api/my-hotels", myHotelRoutes);
 
 // Routes all non-api requests to our index.html in our frontend.
 app.get("*", (req: Request, res: Response) => {
-  res.sendFile(path.join(__dirname, "../../frontend/dist/index.html"));
+  res.sendFile(path.join(__dirname, "../../client/dist/index.html"));
 });
 
 const port = process.env.PORT || 5100;
